@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
@@ -36,7 +36,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <Fragment>
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
@@ -50,7 +50,7 @@ const App = () => {
         ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
         } */}
       </section>
-    </div>
+    </Fragment>
   );
 };
 
